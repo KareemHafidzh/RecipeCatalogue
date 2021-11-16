@@ -15,9 +15,9 @@
             android:id="@+id/img_food"
             android:layout_width="match_parent"
             android:layout_height="200dp"
-            android:contentDescription="Image for Row Item Found"
+            android:contentDescription="@string/content_image_item"
             android:scaleType="centerCrop"
-            app:layout_constraintBottom_toTopOf="parent" />
+            app:layout_constraintTop_toTopOf="parent" />
 
         <TextView
             android:id="@+id/tv_food"

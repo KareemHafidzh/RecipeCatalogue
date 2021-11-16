@@ -5,6 +5,9 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.fragment.app.Fragment
+import androidx.recyclerview.widget.GridLayoutManager
+import com.Kareem.myapplication.adapter.RecipeAdapter
+import com.Kareem.myapplication.data.DataRecipe
 import com.Kareem.myapplication.databinding.FragmentBreakfastBinding
 
 class BreakfastFragment : Fragment() {
@@ -25,6 +28,14 @@ class BreakfastFragment : Fragment() {
         val root: View = binding.root
 
         return root
+    }
+
+    override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
+        super.onViewCreated(view, savedInstanceState)
+        binding.rvBreakfast.apply{
+            layoutManager = GridLayoutManager(activity, 2)
+            adapter = RecipeAdapter(DataRecipe.listBreakfast)
+        }
     }
 
     override fun onDestroyView() {

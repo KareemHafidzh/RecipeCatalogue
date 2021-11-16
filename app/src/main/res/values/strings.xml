@@ -7,4 +7,5 @@
     <string name="content_image_banner_food">Image Banner Food</string>
     <string name="garlic_butter_shrimp">Garlic Butter Shrimp</string>
     <string name="cooked">Cooked</string>
+    <string name="content_image_item">Image for Row Item Found</string>
 </resources>
